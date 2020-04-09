@@ -1,10 +1,10 @@
 package it.persona.java;
 
+import it.persona.java.Language.LanguageType;
+
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("CIAO");
-		
 		Persona p = new Persona();
 		
 	}
