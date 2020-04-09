@@ -1,4 +1,4 @@
-package it.persona.java;
+package it.persona.java.abs;
 
 public class Stress {
 	
