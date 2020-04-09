@@ -38,4 +38,8 @@ public class Stress {
 		this.level = this.level.next();
 	}
 
+	public Level getStressLevel() {
+		return this.level;
+	}
+
 }

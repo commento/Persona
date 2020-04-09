@@ -8,7 +8,6 @@ public class Language extends Tool {
 		MOTHER_TONGUE,
 		FOREIGN_LANGUAGE,
 		PROGRAMMING_LANGUAGE,
-		
 	}
 	
 	public enum Level {
@@ -30,8 +29,12 @@ public class Language extends Tool {
 	
 	private Level level;
 	
-	public Language() {
+	public Language(String name, Level level, String... purposes) {
 		this.level = Level.LOW;
+		super.name = name;
+		for (String p : purposes) {
+			super.purposes.add(p);
+		}
 	}
 	
 	public void use() {
