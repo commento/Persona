@@ -8,5 +8,4 @@ public class Main {
 		Persona p = new Persona();
 		while(p.work() != null) {}
 	}
-
 }

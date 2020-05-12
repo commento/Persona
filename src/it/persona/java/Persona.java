@@ -12,6 +12,8 @@ import it.persona.java.abs.Spirit;
 import it.persona.java.abs.Spirit.Mood;
 import it.persona.java.abs.Stress;
 import it.persona.java.abs.Stress.Reason;
+import it.persona.java.vitamin.VitaminDLevel;
+import it.persona.java.vitamin.VitaminB12Level;
 import it.persona.java.Job;
 import it.persona.java.Job.Field;
 
@@ -22,6 +24,8 @@ public class Persona {
 	private HashMap<LanguageType, Language> languages = new HashMap<LanguageType, Language>();
 	private Spirit spirit;
 	private Energy energy;
+	private VitaminDLevel vitaminD;
+	private VitaminB12Level vitaminB12;
 
 	public Persona() {
 		this.isAlive = true;
@@ -32,6 +36,8 @@ public class Persona {
 		this.job = new Job(new Location(45.464664, 9.188540), Field.PAYMENTS, "W*******e" );
 		this.spirit = new Spirit(Mood.SO_SO, Intensity.MEDIUM);
 		this.energy = new Energy(Intensity.WEAK, Liveness.HALF_DEAD);
+		this.vitaminD = new VitaminDLevel();
+		this.vitaminB12 = new VitaminB12Level();
 	}
 
 	public Language getLanguage(LanguageType languageType) {

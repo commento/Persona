@@ -5,7 +5,15 @@ public class Energy {
 		ALIVE,
 		HALF_DEAD,
 		DEAD,
-		UNDEAD
+		UNDEAD{
+	        @Override
+	        public Liveness next() {
+	            return null;
+	        };
+		};
+	    public Liveness next() {
+	        return values()[ordinal() + 1];
+	    }
 	}
 	
 	Intensity intensity;
